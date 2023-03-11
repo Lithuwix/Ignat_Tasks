@@ -43,7 +43,7 @@ const GreetingContainer: React.FC<GreetingContainerPropsType> = ({
     const [error, setError] = useState<string>('')
 
     const setNameCallback = (e: ChangeEvent<HTMLInputElement>) => {
-        setName(e.currentTarget.value.trim())
+        setName(e.currentTarget.value)
 
         error && setError('')
     }
@@ -61,6 +61,7 @@ const GreetingContainer: React.FC<GreetingContainerPropsType> = ({
     }
 
     const totalUsers = users.length
+    const lastUserName = users[users.length -1]?.name
 
     return (
         <Greeting
@@ -71,7 +72,7 @@ const GreetingContainer: React.FC<GreetingContainerPropsType> = ({
             onEnter={onEnter}
             error={error}
             totalUsers={totalUsers}
-            lastUserName={name}
+            lastUserName={lastUserName}
         />
     )
 }
