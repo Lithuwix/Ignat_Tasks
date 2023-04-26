@@ -1,23 +1,22 @@
 .sidebar {
     display: none;
+    padding: 10px;
+    background-color: white;
+    width: 300px;
 }
 
 .sidebar.open {
-    padding: 10px;
-    z-index: 3;
-    background-color: white;
+    position: absolute;
     display: flex;
     flex-direction: row-reverse;
     align-items: flex-start;
     justify-content: space-between;
-    width: 300px;
-    height: 100vh!important;
-    position: absolute;
+    height: 100vh;
+    z-index: 2;
 }
 
 .background {
     position: absolute;
-    z-index: 2;
     width: 100vw;
     height: 100vh;
     background-color: #4f4f4f;
@@ -34,13 +33,14 @@
     font-size: 1.2rem;
     padding: 10px 50px;
     text-decoration: none;
+    color: black;
 }
 
 .nav a:hover {
 }
 
 .nav a.active {
-    color: #00cc22;
+    color: #06ab7a;
 }
 
 .close {
