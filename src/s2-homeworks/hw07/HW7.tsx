@@ -18,7 +18,7 @@ const arr = [
 ]; // value может быть изменено
 
 const HW7 = () => {
-  const [value, onChangeOption] = useState<string>("junior"); // селект и радио должны работать синхронно
+  const [value, onChangeOption] = useState<string>(arr[1].value); // селект и радио должны работать синхронно
 
   return (
     <div id={"hw7"}>
