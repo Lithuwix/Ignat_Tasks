@@ -60,7 +60,8 @@ function HW11() {
                 },
               ]}
               onChange={change}
-              defaultValue={value1}
+              defaultValue={0}
+              value={value1}
               // сделать так чтоб value1 изменялось // пишет студент
             />
           </div>
@@ -93,7 +94,8 @@ function HW11() {
                 },
               ]}
               onChange={change}
-              defaultValue={[value1, value2]}
+              defaultValue={[0, 100]}
+              value={[value1, value2]}
               // сделать так чтоб value1/2 изменялось // пишет студент
             />
             <span id={"hw11-value-2"} className={s.number}>
