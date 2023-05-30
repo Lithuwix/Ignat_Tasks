@@ -33,19 +33,19 @@ function Clock() {
     setShow(false);
   };
 
-  let formatterForTime = new Intl.DateTimeFormat("ru", {
+  const formatterForTime = new Intl.DateTimeFormat("ru", {
     hour: "numeric",
     minute: "numeric",
     second: "numeric",
   });
 
-  let formatterForDate = new Intl.DateTimeFormat("ru");
+  const formatterForDate = new Intl.DateTimeFormat("ru");
 
-  let formatterForDay = new Intl.DateTimeFormat("en", {
+  const formatterForDay = new Intl.DateTimeFormat("en", {
     weekday: "long",
   });
 
-  let formatterForMonth = new Intl.DateTimeFormat("en", {
+  const formatterForMonth = new Intl.DateTimeFormat("en", {
     month: "long",
   });
 
