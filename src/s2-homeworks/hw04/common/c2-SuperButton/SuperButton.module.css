@@ -1,7 +1,7 @@
 .button {
     cursor: pointer;
-    width: 80px;
     height: 35px;
+    padding: 10px;
     border: none;
     color: white;
     font-weight: 600;
@@ -13,8 +13,8 @@
 }
 
 .default {
-    width: 100px;
     height: 35px;
+    padding: 10px;
     background-color: rgba(0, 102, 204, 0.85);
     border: none;
     color: white;
